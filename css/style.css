@@ -1,0 +1,145 @@
+*{
+	font-size: 100%;
+	font-family: times new roman, serif;
+}
+body{
+	background: white;
+	background-attachment: scroll;
+	margin: 0;
+	display: inline-block;
+}
+header nav a img{
+	width: 50%;
+	border-radius: 60%;
+	}
+main section a img{
+	width: 50%;
+	border-radius: 55%;
+	align-items: flex-end;
+}
+main section img{
+	width: 25%;
+}
+footer a img{
+	width: 30%;
+}
+
+.container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". logo ."
+    ". . ."
+    "botonera botonera botonera"
+    "carousel carousel carousel"
+    "carousel carousel carousel"
+    "presentacion . foto-linkeada"
+    "presentacion . foto-linkeada"
+    "footer footer ."; 
+    border-style: solid;
+}
+
+.container2 {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". logo ."
+    "botonera botonera botonera"
+    ". delivery ."
+    "presentacion . mapa"
+    "presentacion . mapa"
+    "footer footer ."
+  }
+
+.logo { grid-area: logo;
+display: flex;
+justify-items: center;
+justify-content: space-around;
+margin-top: 30px; }
+.botonera 
+{ grid-area: botonera; 
+list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+    align-content: flex-end;
+font-size: 30px;
+line-height: 3rem;
+  }
+  
+.carousel
+ { grid-area: carousel;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+margin-top: -60px;
+  }
+
+.presentacion  
+{ grid-area: presentacion; 
+display: flex;
+justify-content:flex-end;
+text-align: center;
+flex-direction: column;
+line-height: 3;
+font-weight: 100;
+margin-top: -60px}
+
+.foto-linkeada
+{ grid-area: foto-linkeada; 
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+}
+.footer 
+{ grid-area: footer; 
+justify-content: left;
+text-align: center;
+flex-direction: column;
+}
+.mapa{
+	grid-area: mapa;
+	display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+margin-top: -60px
+}
+li {
+  flex-direction: row;
+ list-style: none;
+      display: flex;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.rotate:hover{
+  transform: rotateZ(60deg);
+  transition: transform 4seg;
+  cursor: pointer;
+}
+.skew:hover{
+  transform: skew(30deg);
+  cursor: pointer;
+
+}
+@keyframes: textAlpha{
+  from{
+    opasity: 0;
+  }
+  to{
+    opasity: 1;
+  }
+}
+h2{
+  animation-name: textAlpha;
+  animation-duration: 5seg;  
+  background-color: orange;
+}
+
