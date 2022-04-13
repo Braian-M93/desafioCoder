@@ -1,145 +1,258 @@
 *{
-	font-size: 100%;
-	font-family: times new roman, serif;
+  font-size: 100%;
+  font-family: times new roman, serif;
 }
+
 body{
-	background: white;
-	background-attachment: scroll;
-	margin: 0;
-	display: inline-block;
-}
-header nav a img{
-	width: 50%;
-	border-radius: 60%;
-	}
-main section a img{
-	width: 50%;
-	border-radius: 55%;
-	align-items: flex-end;
-}
-main section img{
-	width: 25%;
-}
-footer a img{
-	width: 30%;
-}
-
-.container {
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    ". logo ."
-    ". . ."
-    "botonera botonera botonera"
-    "carousel carousel carousel"
-    "carousel carousel carousel"
-    "presentacion . foto-linkeada"
-    "presentacion . foto-linkeada"
-    "footer footer ."; 
-    border-style: solid;
-}
-
-.container2 {
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    ". logo ."
-    "botonera botonera botonera"
-    ". delivery ."
-    "presentacion . mapa"
-    "presentacion . mapa"
-    "footer footer ."
-  }
-
-.logo { grid-area: logo;
-display: flex;
-justify-items: center;
-justify-content: space-around;
-margin-top: 30px; }
-.botonera 
-{ grid-area: botonera; 
-list-style: none;
-      display: flex;
-      justify-content: space-evenly;
-    align-content: flex-end;
-font-size: 30px;
-line-height: 3rem;
-  }
   
-.carousel
- { grid-area: carousel;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: row;
-margin-top: -60px;
-  }
+  background-image: url(../img/arrozsushi4.jpg);
+  background-attachment: scroll;
 
-.presentacion  
-{ grid-area: presentacion; 
-display: flex;
-justify-content:flex-end;
-text-align: center;
-flex-direction: column;
-line-height: 3;
-font-weight: 100;
-margin-top: -60px}
+}
 
-.foto-linkeada
-{ grid-area: foto-linkeada; 
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: row;
-}
-.footer 
-{ grid-area: footer; 
-justify-content: left;
-text-align: center;
-flex-direction: column;
-}
-.mapa{
-	grid-area: mapa;
-	display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: row;
-margin-top: -60px
-}
-li {
-  flex-direction: row;
- list-style: none;
-      display: flex;
-}
-a {
+header nav ul li a{
+  list-style-type: none;
   text-decoration: none;
+  font-size: 20px;
+}
+
+
+header nav ul li{
+  list-style-type: none;
+}
+
+header nav ul li a{
+color: black;
+font-weight: 300%;
+font-size: 50px;
+line-height: 5rem;
+margin: 30px;
+}
+ 
+ fieldset div p label{
+  color:black;
+  font-weight: 500;
+  font-size: 50px;
+  font-family: times new roman, serif;
+  line-height: 5rem;
+}
+form fieldset label{
+  font-size: 50px;
+  font-family: times new roman, serif;
+  line-height: 5rem;
+}
+
+ fieldset article p{
+  color:black;
+  font-weight: 400;
+  font-size: 40px;
+  font-family: times new roman, serif;
+  line-height: 2.3rem; 
+}
+
+article p{
+  color:black ;
+  font-weight: bold ;
+  font-size: 30px;
+  font-family: times new roman, serif;
+  line-height: 4rem;
+}
+
+legend h3{
+  color:black ;
+  font-weight: bold ;
+  font-size: 30px;
+  font-family: times new roman, serif;
+  line-height: 5rem;
+}
+
+
+table{
+  color:black;
+}
+
+.text-center{
+  text-align: center; 
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-right{
+  text-align: right;
+}
+fieldset{
   color: black;
 }
-.rotate:hover{
-  transform: rotateZ(60deg);
-  transition: transform 4seg;
-  cursor: pointer;
+.w-10{
+  width: 10%;
 }
-.skew:hover{
-  transform: skew(30deg);
-  cursor: pointer;
+section fieldset div img{
+  width: 25%;
+  margin: 25px;
+  border-radius: 10%;
 
 }
-@keyframes: textAlpha{
-  from{
-    opasity: 0;
-  }
-  to{
-    opasity: 1;
-  }
-}
-h2{
-  animation-name: textAlpha;
-  animation-duration: 5seg;  
-  background-color: orange;
+section fieldset{
+  border: solid;
+  color: black;
+    font-weight: 300;
+  
+  line-height: 5rem;
+  margin: 30px;
 }
 
+header nav a img{
+  width: 20%;
+  border-radius: 60%;
+}
+section a img{
+  width: 50%;
+  border-radius: 20%;
+}
+
+section img{
+  width: 25%;
+}
+
+.nosotros__titulo--xl{
+font-size: 3rem ;
+}
+.nosotros__text--md{
+  font-size: 2rem;
+}
+.imagen{
+  width: 80%;
+  height: auto;
+  margin-left: 21vw;
+}
+
+.nosotros{
+  width: 100%;
+  height: auto;
+  margin: 30px auto ;
+}
+.nosotros__titulo--xl{
+  background-color: red;
+}
+
+.pie{
+
+  margin-left: 30px;
+
+}
+.encabezado ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+  height: 30px;
+  color: black;
+font-weight: 300%;
+font-size: 50px;
+line-height: 5rem;
+margin: 30px;
+}
+
+
+.container{
+  display: flex;
+  border-style: double;
+  justify-content: start;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.justify-content{
+  justify-content: space-around;
+}
+
+.align-content{
+  align-content: space-around;
+}
+.align-items{
+  align-items: center;
+}
+.flex-direction{
+  flex-direction: column;
+}
+.grid {
+    width: 95%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 20px;
+    grid-template-areas:
+        "presentacion insta ";    
+}
+
+.grid1{
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+    grid-template-areas:
+    "delivery mapa";
+}
+#header{
+  grid-area: header;
+}
+#main{
+  grid-area: main;
+}
+#presentacion{
+grid-area: presentacion;
+}
+#insta{
+    grid-area: insta;
+    align-self: center;
+}
+
+#mapa{
+  grid-area: mapa;
+  align-self: end;
+}
+
+#footer{
+grid-area: footer;
+}
+#delivery{
+  grid-area: delivery;
+}
+
+.justify-items{
+  justify-items: end ;
+}
+.align-items{
+  align-items: center;
+}
+.justify-content{
+  grid-template-columns:;
+justify-content: space-around;
+}
+.align-content{
+align-content: space-evenly;
+}
+@media (max-width: 800px){
+  .column{
+    flex:50%;
+  }
+ }
+
+ @media (max-width: 600px){
+  .column{
+    flex:100%;
+  }
+ .row{
+  display: flex;
+  padding: 10px;
+flex-wrap: wrap;
+ }
+ .column{
+  flex: 25%;
+  margin-top: 10px;
+ }

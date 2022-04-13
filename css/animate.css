@@ -1,5 +1,5 @@
 p{
-	animation-duration: 4s ;
+	animation-duration: 2s ;
 	animation-name: slidein ;
   
 }
@@ -17,7 +17,7 @@ p{
   }
 }
 ul{
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-name:bounceInLeft;
 }
 @keyframes bounceInLeft{
